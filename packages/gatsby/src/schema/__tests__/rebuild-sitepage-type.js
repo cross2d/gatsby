@@ -2,7 +2,7 @@ const { store } = require(`../../redux`)
 const { graphql } = require(`../../../graphql`)
 const { build, rebuildWithSitePage } = require(`..`)
 
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     log: jest.fn(),
     info: jest.fn(),

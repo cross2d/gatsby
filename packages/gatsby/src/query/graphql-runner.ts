@@ -12,7 +12,7 @@ import {
   NoDeprecatedCustomRule,
 } from "graphql"
 import { debounce } from "lodash"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { createPageDependency } from "../redux/actions/add-page-dependency"
 
 import withResolverContext from "../schema/context"

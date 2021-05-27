@@ -2,7 +2,7 @@ import { camelCase } from "lodash"
 import { GraphQLSchema, GraphQLOutputType } from "graphql"
 import { ActionCreator } from "redux"
 import { ThunkAction } from "redux-thunk"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import { parseTypeDef } from "../../schema/types/type-defs"
 import {
   GraphQLFieldExtensionDefinition,

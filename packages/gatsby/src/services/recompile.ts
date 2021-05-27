@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-expressions */
 import { IBuildContext } from "./types"
 import { Stats } from "webpack"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { emitter } from "../redux"
 
 export async function recompile({

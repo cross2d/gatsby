@@ -1,7 +1,7 @@
 import fs from "fs-extra"
 import path from "path"
 import { platform } from "os"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 
 import {
   remove as removePageHtmlFile,

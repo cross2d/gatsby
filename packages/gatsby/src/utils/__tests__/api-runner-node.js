@@ -27,7 +27,7 @@ const mockActivity = {
   done: end,
 }
 
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     activityTimer: jest.fn(() => mockActivity),
     createProgress: jest.fn(() => mockActivity),
@@ -37,7 +37,7 @@ jest.mock(`gatsby-cli/lib/reporter`, () => {
 })
 
 const { store, emitter } = require(`../../redux`)
-const reporter = require(`gatsby-cli/lib/reporter`)
+const reporter = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 const { getCache } = require(`../get-cache`)
 
 beforeEach(() => {

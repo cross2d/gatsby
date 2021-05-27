@@ -5,7 +5,7 @@ jest.mock(`fs`, () => {
     readFileSync: jest.fn(file => `${file}::file`),
   }
 })
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     panic: jest.fn(),
     info: jest.fn(),
@@ -18,7 +18,7 @@ jest.mock(`devcert`, () => {
 })
 
 import { certificateFor as getDevCert } from "devcert"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { getSslCert, IGetSslCertArgs } from "../get-ssl-cert"
 
 describe(`gets ssl certs`, () => {

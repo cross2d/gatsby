@@ -1,4 +1,4 @@
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { writeAll } from "../bootstrap/requires-writer"
 import { IQueryRunningContext } from "../state-machines/query-running/types"
 import { assertStore } from "../utils/assert-store"

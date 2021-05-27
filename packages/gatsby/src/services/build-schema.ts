@@ -1,5 +1,5 @@
 import { build } from "../schema"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { IDataLayerContext } from "../state-machines/data-layer/types"
 
 export async function buildSchema({

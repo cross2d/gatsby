@@ -1,4 +1,4 @@
-import { Reporter } from "gatsby-cli/lib/reporter/reporter"
+import { Reporter } from "@colin3dmax/gatsby-cli/lib/reporter/reporter"
 import { WebpackError, StatsCompilation, Module, NormalModule } from "webpack"
 import { Stage as StageEnum } from "../commands/types"
 import formatWebpackMessages from "react-dev-utils/formatWebpackMessages"

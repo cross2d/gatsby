@@ -1,10 +1,10 @@
 import { loadPlugins } from "../index"
 import { slash } from "gatsby-core-utils"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { IFlattenedPlugin } from "../types"
 import { silent as resolveFrom } from "resolve-from"
 
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     error: jest.fn(),
     panic: jest.fn(),

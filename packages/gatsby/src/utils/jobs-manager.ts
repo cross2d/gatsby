@@ -5,8 +5,8 @@ import fs from "fs-extra"
 import pDefer from "p-defer"
 import _ from "lodash"
 import { createContentDigest, slash } from "gatsby-core-utils"
-import reporter from "gatsby-cli/lib/reporter"
-import { IPhantomReporter } from "gatsby-cli"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
+import { IPhantomReporter } from "@colin3dmax/gatsby-cli"
 
 enum MESSAGE_TYPES {
   JOB_CREATED = `JOB_CREATED`,

@@ -1,4 +1,4 @@
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { extractQueries as extractQueriesAndWatch } from "../query/query-watcher"
 import apiRunnerNode from "../utils/api-runner-node"
 import { IQueryRunningContext } from "../state-machines/query-running/types"

@@ -2,7 +2,7 @@ import { assertStore } from "./assert-store"
 import { Store } from "redux"
 import { IMutationAction } from "../services"
 import { actions } from "../redux/actions"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 /**
  * These are the deferred redux actions sent from api-runner-node
  * They may include a `resolve` prop (if they are createNode actions).

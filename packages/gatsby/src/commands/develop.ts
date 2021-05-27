@@ -19,7 +19,7 @@ import {
   updateSiteMetadata,
   UnlockFn,
 } from "gatsby-core-utils"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { getSslCert } from "../utils/get-ssl-cert"
 import { startDevelopProxy } from "../utils/develop-proxy"
 import { IProgram, IDebugInfo } from "./types"

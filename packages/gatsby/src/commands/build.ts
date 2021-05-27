@@ -1,5 +1,5 @@
 import path from "path"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import signalExit from "signal-exit"
 import fs from "fs-extra"
 import telemetry from "gatsby-telemetry"

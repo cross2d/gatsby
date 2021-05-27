@@ -18,7 +18,7 @@ import { store, emitter } from "../redux/"
 import { actions } from "../redux/actions"
 import { IGatsbyStaticQueryComponents } from "../redux/types"
 import queryCompiler from "./query-compiler"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import { getGatsbyDependents } from "../utils/gatsby-dependents"
 
 const debug = require(`debug`)(`gatsby:query-watcher`)

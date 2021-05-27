@@ -20,7 +20,7 @@ jest.mock(`fs-extra`, () => {
 })
 
 // we mock it to make tests faster
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {}
 })
 

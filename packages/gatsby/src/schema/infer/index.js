@@ -1,4 +1,4 @@
-const report = require(`gatsby-cli/lib/reporter`)
+const report = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 const { ObjectTypeComposer } = require(`graphql-compose`)
 const { hasNodes } = require(`./inference-metadata`)
 const { getExampleObject } = require(`./build-example-data`)

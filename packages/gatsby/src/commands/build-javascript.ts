@@ -2,7 +2,7 @@ import { Span } from "opentracing"
 import webpack, { WebpackError } from "webpack"
 import webpackConfig from "../utils/webpack.config"
 import { IProgram } from "./types"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import {
   showExperimentNoticeAfterTimeout,
   CancelExperimentNoticeCallbackOrUndefined,

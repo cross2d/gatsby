@@ -11,7 +11,7 @@ import {
 } from "fs-extra"
 import { IGatsbyNode, ICachedReduxState, IGatsbyPage } from "./types"
 import { sync as globSync } from "glob"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 
 const getReduxCacheFolder = (): string =>
   // This is a function for the case that somebody does a process.chdir (#19800)

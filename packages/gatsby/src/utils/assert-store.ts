@@ -1,5 +1,5 @@
 import { Store } from "redux"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 
 export function assertStore(store?: Store): asserts store {
   if (!store) {

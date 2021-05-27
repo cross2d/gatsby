@@ -48,6 +48,7 @@ exports.mdxHTMLLoader = ({ cache, reporter, store }) =>
               // error handling bonanza
               if (err) {
                 reporter.error(err.stack || err)
+                console.log(`Error Details:`, err)
                 if (err.details) {
                   reporter.error(`gatsby-plugin-mdx\n` + err.details)
                 }
@@ -57,10 +58,12 @@ exports.mdxHTMLLoader = ({ cache, reporter, store }) =>
               const info = stats.toJson()
 
               if (stats.hasErrors()) {
+                console.log(`Error:`, info.errors)
                 reporter.error(`gatsby-plugin-mdx\n` + info.errors)
               }
 
               if (stats.hasWarnings()) {
+                console.log(`Warnings:`, info.warnings)
                 reporter.warn(`gatsby-plugin-mdx\n` + info.warnings)
               }
 

@@ -1,6 +1,6 @@
 const { availableActionsByAPI } = require(`../restricted`)
 
-const report = require(`gatsby-cli/lib/reporter`)
+const report = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 report.warn = jest.fn()
 report.error = jest.fn()
 afterEach(() => {

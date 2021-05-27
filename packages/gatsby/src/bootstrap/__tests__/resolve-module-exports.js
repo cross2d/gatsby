@@ -5,14 +5,14 @@ jest.mock(`fs`, () => {
     readFileSync: jest.fn(),
   }
 })
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     panic: jest.fn(),
   }
 })
 
 const fs = require(`fs`)
-const reporter = require(`gatsby-cli/lib/reporter`)
+const reporter = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 const { resolveModuleExports } = require(`../resolve-module-exports`)
 let resolver
 

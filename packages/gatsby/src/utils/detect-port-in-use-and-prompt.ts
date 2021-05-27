@@ -1,5 +1,5 @@
 import detectPort from "detect-port"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import prompts from "prompts"
 
 export const detectPortInUseAndPrompt = async (

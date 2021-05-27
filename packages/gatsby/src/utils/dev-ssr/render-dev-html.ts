@@ -1,7 +1,7 @@
 import JestWorker from "jest-worker"
 import fs from "fs-extra"
 import nodePath from "path"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import { isCI } from "gatsby-core-utils"
 
 import { startListener } from "../../bootstrap/requires-writer"

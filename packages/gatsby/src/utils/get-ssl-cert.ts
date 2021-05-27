@@ -1,4 +1,4 @@
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import fs from "fs"
 import path from "path"
 import os from "os"

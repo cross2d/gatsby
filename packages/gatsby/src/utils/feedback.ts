@@ -1,4 +1,4 @@
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import { getConfigStore, getGatsbyVersion, isCI } from "gatsby-core-utils"
 import { trackCli } from "gatsby-telemetry"
 import latestVersion from "latest-version"

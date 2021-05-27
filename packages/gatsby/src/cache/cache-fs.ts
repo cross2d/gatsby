@@ -30,7 +30,7 @@ const promisify = require(`util`).promisify
 const jsonFileStore = require(`./json-file-store`)
 const wrapCallback = require(`./wrap-callback`)
 
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 
 // Cache read/writes are async. This locking attempts to prevent race conditions.
 // It's not ideal and locks timeout after 10s. It's mostly a port from when this

@@ -1,4 +1,4 @@
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     panicOnBuild: jest.fn(),
     error: jest.fn(),
@@ -8,7 +8,7 @@ jest.mock(`gatsby-cli/lib/reporter`, () => {
 jest.mock(`../../resolve-module-exports`)
 jest.mock(`../../../utils/get-latest-apis`)
 
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import {
   collatePluginAPIs,
   handleBadExports,

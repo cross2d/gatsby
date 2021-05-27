@@ -17,7 +17,7 @@ import {
   ISiteConfig,
 } from "./types"
 import { PackageJson } from "../../.."
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { silent as resolveFromSilent } from "resolve-from"
 
 const GATSBY_CLOUD_PLUGIN_NAME = `gatsby-plugin-gatsby-cloud`

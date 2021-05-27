@@ -2,7 +2,7 @@ import { IProgram } from "../commands/types"
 import { GraphQLFieldExtensionDefinition } from "../schema/extensions"
 import { DocumentNode, GraphQLSchema, DefinitionNode } from "graphql"
 import { SchemaComposer } from "graphql-compose"
-import { IGatsbyCLIState } from "gatsby-cli/src/reporter/redux/types"
+import { IGatsbyCLIState } from "@colin3dmax/gatsby-cli/src/reporter/redux/types"
 import { InternalJob, JobResultInterface } from "../utils/jobs-manager"
 import { ITypeMetadata } from "../schema/infer/inference-metadata"
 

@@ -5,7 +5,7 @@ import {
   State,
   AnyEventObject,
 } from "xstate"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 
 const isInterpreter = <T>(
   actor: Actor<T> | Interpreter<T>

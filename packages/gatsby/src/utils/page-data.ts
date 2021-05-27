@@ -1,6 +1,6 @@
 import { walkStream as fsWalkStream, Entry } from "@nodelib/fs.walk"
 import fs from "fs-extra"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import fastq from "fastq"
 import path from "path"
 import { createContentDigest } from "gatsby-core-utils"

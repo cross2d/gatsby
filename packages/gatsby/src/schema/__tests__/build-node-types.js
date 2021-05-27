@@ -16,7 +16,7 @@ const { TypeConflictReporter } = require(`../infer/type-conflict-reporter`)
 const typeConflictReporter = new TypeConflictReporter()
 const addConflictSpy = jest.spyOn(typeConflictReporter, `addConflict`)
 
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     log: jest.fn(),
     info: jest.fn(),

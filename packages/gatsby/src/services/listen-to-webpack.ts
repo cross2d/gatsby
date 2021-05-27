@@ -1,6 +1,6 @@
 import { Compiler } from "webpack"
 import { InvokeCallback } from "xstate"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 
 export const createWebpackWatcher = (compiler: Compiler): InvokeCallback => (
   callback

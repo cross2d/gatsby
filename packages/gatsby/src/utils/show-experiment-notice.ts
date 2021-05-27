@@ -1,5 +1,5 @@
 import { getConfigStore } from "gatsby-core-utils"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import chalk from "chalk"
 import telemetry from "gatsby-telemetry"
 

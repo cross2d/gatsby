@@ -5,7 +5,7 @@ import { print, visit, getLocation } from "graphql"
 import { codeFrameColumns } from "@babel/code-frame"
 const { distance: levenshtein } = require(`fastest-levenshtein`)
 import _ from "lodash"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 const { locInGraphQlToLocInFile } = require(`./error-parser`)
 
 type RelayGraphQLError = Error & { validationErrors?: Object }

@@ -82,9 +82,9 @@ function buildLocalCommands(cli: yargs.Argv, isLocalSite: boolean): void {
 
     try {
       const cmdPath =
-        resolveCwd.silent(`gatsby/dist/commands/${command}`) ||
+        resolveCwd.silent(`@colin3dmax/gatsby/dist/commands/${command}`) ||
         // Old location of commands
-        resolveCwd.silent(`gatsby/dist/utils/${command}`)
+        resolveCwd.silent(`@colin3dmax/gatsby/dist/utils/${command}`)
       if (!cmdPath)
         return report.panic(
           `There was a problem loading the local ${command} command. Gatsby may not be installed in your site's "node_modules" directory. Perhaps you need to run "npm install"? You might need to delete your "package-lock.json" as well.`
@@ -464,12 +464,14 @@ function buildLocalCommands(cli: yargs.Argv, isLocalSite: boolean): void {
 function isLocalGatsbySite(): boolean {
   let inGatsbySite = false
   try {
-    const { dependencies, devDependencies } = require(path.resolve(
-      `./package.json`
-    ))
-    inGatsbySite =
-      (dependencies && dependencies.gatsby) ||
-      (devDependencies && devDependencies.gatsby)
+    // const { dependencies, devDependencies } = require(path.resolve(
+    //   `./package.json`
+    // ))
+    // inGatsbySite =
+    //   (dependencies && dependencies["@colin3dmax/gatsby"]) ||
+    //   (devDependencies && devDependencies["@colin3dmax/gatsby"])
+
+    inGatsbySite = true
   } catch (err) {
     /* ignore */
   }

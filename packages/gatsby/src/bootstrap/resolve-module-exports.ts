@@ -3,7 +3,7 @@ import * as t from "@babel/types"
 import traverse from "@babel/traverse"
 import { codeFrameColumns, SourceLocation } from "@babel/code-frame"
 import { babelParseToAst } from "../utils/babel-parse-to-ast"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 
 import { testRequireError } from "../utils/test-require-error"
 

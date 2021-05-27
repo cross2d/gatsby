@@ -2,7 +2,7 @@ import * as React from "react"
 import { Renderer } from "react-dom"
 import { EventEmitter } from "events"
 import { WindowLocation, NavigateFn, NavigateOptions } from "@reach/router"
-import { Reporter } from "gatsby-cli/lib/reporter/reporter"
+import { Reporter } from "@colin3dmax/gatsby-cli/lib/reporter/reporter"
 export { Reporter }
 import {
   EnumTypeComposerAsObjectDefinition as ComposeEnumTypeConfig,

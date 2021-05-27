@@ -7,7 +7,7 @@ const memoize = require(`memoizee`)
 const bindActionCreators = memoize(origBindActionCreators)
 
 const tracer = require(`opentracing`).globalTracer()
-const reporter = require(`gatsby-cli/lib/reporter`)
+const reporter = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 const stackTrace = require(`stack-trace`)
 const { codeFrameColumns } = require(`@babel/code-frame`)
 const fs = require(`fs-extra`)
@@ -266,6 +266,7 @@ const runAPI = async (plugin, api, args, activity) => {
 
     pluginSpan.setTag(`api`, api)
     pluginSpan.setTag(`plugin`, plugin.name)
+    console.log(`${plugin.name}==${api}`)
     const {
       publicActions,
       restrictedActionsAvailableInAPI,
@@ -506,6 +507,7 @@ module.exports = async (api, args = {}, { pluginSource, activity } = {}) =>
       id = `${api}|${apiRunInstance.startTime}|${apiRunInstance.traceId}|${argsJson}`
     }
     apiRunInstance.id = id
+    console.log(`apiRunInstance.id---->start`, apiRunInstance.id)
 
     if (waitForCascadingActions) {
       waitingForCasacadeToFinish.push(apiRunInstance)
@@ -644,6 +646,7 @@ module.exports = async (api, args = {}, { pluginSource, activity } = {}) =>
       if (onAPIRunComplete) {
         onAPIRunComplete()
       }
+      console.log(`apiRunInstance.id---->finished`, apiRunInstance.id)
       // Remove runner instance
       apisRunningById.delete(apiRunInstance.id)
       const currentCount = apisRunningByTraceId.get(apiRunInstance.traceId)

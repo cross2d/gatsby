@@ -1,5 +1,5 @@
 const _ = require(`lodash`)
-const report = require(`gatsby-cli/lib/reporter`)
+const report = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 const redux = require(`../redux`)
 const { emitter } = redux
 

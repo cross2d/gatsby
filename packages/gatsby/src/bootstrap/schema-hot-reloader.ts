@@ -3,7 +3,7 @@ import { emitter, store } from "../redux"
 import { rebuild } from "../schema"
 import { haveEqualFields } from "../schema/infer/inference-metadata"
 import { updateStateAndRunQueries } from "../query/query-watcher"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import { IGatsbyState } from "../redux/types"
 
 type TypeMap = IGatsbyState["inferenceMetadata"]["typeMap"]

@@ -1,5 +1,5 @@
 import { syncStaticDir } from "../utils/get-static-dir"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import telemetry from "gatsby-telemetry"
 import { isTruthy } from "gatsby-core-utils"
 import express from "express"

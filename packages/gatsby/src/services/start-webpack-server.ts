@@ -1,5 +1,5 @@
 import openurl from "better-opn"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import chalk from "chalk"
 import { Compiler } from "webpack"
 import { Stage } from "../commands/types"

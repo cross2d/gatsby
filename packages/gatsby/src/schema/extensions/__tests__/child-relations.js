@@ -7,7 +7,7 @@ const { dispatch } = store
 const { actions } = require(`../../../redux/actions`)
 const { createTypes } = actions
 
-const report = require(`gatsby-cli/lib/reporter`)
+const report = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 report.error = jest.fn()
 report.panic = jest.fn()
 report.warn = jest.fn()

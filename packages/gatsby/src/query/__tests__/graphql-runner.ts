@@ -4,7 +4,7 @@ import { actions } from "../../redux/actions"
 import { store } from "../../redux"
 import { build } from "../../schema"
 
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     log: jest.fn(),
     info: jest.fn(),
@@ -26,7 +26,7 @@ jest.mock(`gatsby-cli/lib/reporter`, () => {
   }
 })
 
-const reporter = require(`gatsby-cli/lib/reporter`)
+const reporter = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 afterEach(() => {
   reporter.error.mockClear()
   reporter.warn.mockClear()

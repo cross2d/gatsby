@@ -6,8 +6,8 @@ jest.mock(`fs-extra`, () => {
   }
 })
 jest.mock(`../../utils/api-runner-node`, () => () => [])
-jest.mock(`gatsby-cli/lib/reporter/index`)
-const reporter = require(`gatsby-cli/lib/reporter`)
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter/index`)
+const reporter = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 const fs = require(`fs-extra`)
 
 const FileParser = require(`../file-parser`).default

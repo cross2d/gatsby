@@ -7,7 +7,7 @@ const { dispatch } = store
 const { actions } = require(`../../../redux/actions`)
 const { createTypes, createFieldExtension } = actions
 
-const report = require(`gatsby-cli/lib/reporter`)
+const report = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 report.panic = jest.fn()
 report.warn = jest.fn()
 afterEach(() => {
@@ -15,7 +15,7 @@ afterEach(() => {
   report.warn.mockClear()
 })
 
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     log: jest.fn(),
     info: jest.fn(),

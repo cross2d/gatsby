@@ -1,5 +1,5 @@
 import { rebuildWithSitePage } from "../schema"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { IQueryRunningContext } from "../state-machines/query-running/types"
 
 export async function rebuildSchemaWithSitePage({

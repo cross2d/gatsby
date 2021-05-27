@@ -1,7 +1,7 @@
 import { Span } from "opentracing"
 import _ from "lodash"
 import fs from "fs-extra"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import crypto from "crypto"
 import { ExecutionResult, GraphQLError } from "graphql"
 

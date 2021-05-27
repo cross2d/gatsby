@@ -12,7 +12,7 @@ jest.mock(`fs`, () => {
     readFile: jest.fn(),
   }
 })
-jest.mock(`gatsby/package.json`, () => {
+jest.mock(`@colin3dmax/gatsby/package.json`, () => {
   return {
     version: `2.0.0`,
   }

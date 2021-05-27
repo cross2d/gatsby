@@ -1,4 +1,4 @@
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { createSchemaCustomization } from "../utils/create-schema-customization"
 import { IDataLayerContext } from "../state-machines/data-layer/types"
 

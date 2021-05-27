@@ -19,7 +19,7 @@ import { codeFrameColumns } from "@babel/code-frame"
 import { withBasePath } from "../utils/path"
 import webpackConfig from "../utils/webpack.config"
 import { store, emitter } from "../redux"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import * as WorkerPool from "../utils/worker/pool"
 
 import { developStatic } from "../commands/develop-static"

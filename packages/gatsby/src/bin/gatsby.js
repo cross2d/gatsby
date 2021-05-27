@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-require(`gatsby-cli`)
+require(`@colin3dmax/gatsby-cli`)

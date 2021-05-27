@@ -20,7 +20,7 @@ const {
 const { getNode, getNodesByType } = require(`../redux/nodes`)
 
 const apiRunner = require(`../utils/api-runner-node`)
-const report = require(`gatsby-cli/lib/reporter`)
+const report = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 const { addNodeInterfaceFields } = require(`./types/node-interface`)
 const { overridableBuiltInTypeNames } = require(`./types/built-in-types`)
 const { addInferredType, addInferredTypes } = require(`./infer`)

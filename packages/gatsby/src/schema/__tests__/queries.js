@@ -9,7 +9,7 @@ const apiRunnerNode = require(`../../utils/api-runner-node`)
 
 const nodes = require(`./fixtures/queries`)
 
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     log: jest.fn(),
     info: jest.fn(),

@@ -1,5 +1,5 @@
 import { ActionsUnion } from "./../types"
-import { IGatsbyState } from "gatsby/src/redux/types"
+import { IGatsbyState } from "@colin3dmax/gatsby/src/redux/types"
 
 export const nodesTouchedReducer = (
   state: IGatsbyState["nodesTouched"] = new Set(),

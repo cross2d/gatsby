@@ -1,7 +1,7 @@
 const { parse, Kind: GraphQLASTNodeKind } = require(`graphql`)
 import { isGatsbyType } from "./type-builders"
 const { inferExtensionName, dontInferExtensionName } = require(`../extensions`)
-const report = require(`gatsby-cli/lib/reporter`)
+const report = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 
 const isASTDocument = typeOrTypeDef =>
   typeof typeOrTypeDef === `object` &&

@@ -14,7 +14,7 @@ const {
   GraphQLSyntaxError,
 } = require(`babel-plugin-remove-graphql-queries`)
 
-const report = require(`gatsby-cli/lib/reporter`)
+const report = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 
 import type { DocumentNode } from "graphql"
 import { babelParseToAst } from "../utils/babel-parse-to-ast"

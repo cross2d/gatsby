@@ -11,7 +11,7 @@ const {
   isCompositeType,
 } = require(`graphql`)
 const invariant = require(`invariant`)
-const reporter = require(`gatsby-cli/lib/reporter`)
+const reporter = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 import {
   getNode,
   getNodes,

@@ -1,7 +1,7 @@
 import { distance as levenshtein } from "fastest-levenshtein"
 import fs from "fs-extra"
 import { testRequireError } from "../utils/test-require-error"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import path from "path"
 import { sync as existsSync } from "fs-exists-cached"
 

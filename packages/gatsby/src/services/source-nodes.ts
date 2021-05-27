@@ -1,5 +1,5 @@
 import sourceNodesAndRemoveStaleNodes from "../utils/source-nodes"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { IDataLayerContext } from "../state-machines/data-layer/types"
 import { assertStore } from "../utils/assert-store"
 import { IGatsbyPage } from "../redux/types"

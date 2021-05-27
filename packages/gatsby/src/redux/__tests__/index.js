@@ -1,7 +1,7 @@
 const _ = require(`lodash`)
 const path = require(`path`)
 const v8 = require(`v8`)
-const reporter = require(`gatsby-cli/lib/reporter`)
+const reporter = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 
 const writeToCache = jest.spyOn(require(`../persist`), `writeToCache`)
 const v8Serialize = jest.spyOn(v8, `serialize`)

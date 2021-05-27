@@ -7,7 +7,7 @@ const debug = require(`debug`)(`gatsby:load-themes`)
 import { preferDefault } from "../prefer-default"
 import { getConfigFile } from "../get-config-file"
 const { resolvePlugin } = require(`../load-plugins/load`)
-const reporter = require(`gatsby-cli/lib/reporter`)
+const reporter = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 
 // get the gatsby-config file for a theme
 const resolveTheme = async (

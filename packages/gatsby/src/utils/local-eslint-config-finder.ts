@@ -1,7 +1,7 @@
 import path from "path"
 import glob from "glob"
 import debug from "debug"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 
 const log = debug(`gatsby:webpack-eslint-config`)
 

@@ -7,7 +7,7 @@ const {
   ScalarTypeComposer,
   UnionTypeComposer,
 } = require(`graphql-compose`)
-const report = require(`gatsby-cli/lib/reporter`)
+const report = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 
 const { internalExtensionNames } = require(`./extensions`)
 

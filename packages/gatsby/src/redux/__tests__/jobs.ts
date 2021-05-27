@@ -1,9 +1,9 @@
 import { actions } from "../actions"
 import { jobsReducer } from "../reducers/jobs"
 import { IGatsbyState } from "../types"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     warn: jest.fn(),
   }

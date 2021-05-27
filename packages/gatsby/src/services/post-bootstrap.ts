@@ -1,4 +1,4 @@
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { emitter, store } from "../redux"
 import apiRunnerNode from "../utils/api-runner-node"
 import { IDataLayerContext } from "../state-machines/data-layer/types"

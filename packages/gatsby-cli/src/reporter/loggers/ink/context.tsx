@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect, createContext } from "react"
 import { getStore, onLogAction } from "../../redux"
-import { IGatsbyState } from "gatsby/src/redux/types"
+import { IGatsbyState } from "@colin3dmax/gatsby/src/redux/types"
 
 // These weird castings we are doing in this file is because the way gatsby-cli works is that it starts with it's own store
 // but then quickly swaps it out with the store from the installed gatsby. This would benefit from a refactor later on

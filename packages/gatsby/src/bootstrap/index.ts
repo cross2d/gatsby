@@ -12,7 +12,7 @@ import {
   rebuildSchemaWithSitePage,
 } from "../services"
 import { Runner, createGraphQLRunner } from "./create-graphql-runner"
-import reporter from "gatsby-cli/lib/reporter"
+import reporter from "@colin3dmax/gatsby-cli/lib/reporter"
 import { globalTracer } from "opentracing"
 import JestWorker from "jest-worker"
 import { handleStalePageData } from "../utils/page-data"

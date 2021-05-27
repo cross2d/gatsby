@@ -1,5 +1,5 @@
 import sortBy from "lodash/sortBy"
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import typeOf from "type-of"
 import util from "util"
 

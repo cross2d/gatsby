@@ -1,4 +1,4 @@
-import report from "gatsby-cli/lib/reporter"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
 import { trackFeatureIsUsed } from "gatsby-telemetry"
 
 import { findPageByPath } from "../find-page-by-path"

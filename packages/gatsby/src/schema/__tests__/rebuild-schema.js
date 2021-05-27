@@ -15,7 +15,7 @@ import { buildObjectType } from "../types/type-builders"
 
 jest.mock(`../../utils/api-runner-node`)
 
-jest.mock(`gatsby-cli/lib/reporter`, () => {
+jest.mock(`@colin3dmax/gatsby-cli/lib/reporter`, () => {
   return {
     log: jest.fn(),
     info: jest.fn(),
@@ -36,7 +36,7 @@ jest.mock(`gatsby-cli/lib/reporter`, () => {
   }
 })
 
-const reporter = require(`gatsby-cli/lib/reporter`)
+const reporter = require(`@colin3dmax/gatsby-cli/lib/reporter`)
 const typePrinter = schema => typeName => printType(schema.getType(typeName))
 
 const addNode = node => store.dispatch({ type: `CREATE_NODE`, payload: node })

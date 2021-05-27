@@ -12,7 +12,7 @@ const path = require(`path`)
 const chalk = require(`chalk`)
 const { isNodeInternalModulePath } = require(`gatsby-core-utils`)
 
-const gatsbyLocation = path.dirname(require.resolve(`gatsby/package.json`))
+const gatsbyLocation = path.dirname(require.resolve(`@colin3dmax/gatsby/package.json`))
 const reduxThunkLocation = path.dirname(
   require.resolve(`redux-thunk/package.json`)
 )

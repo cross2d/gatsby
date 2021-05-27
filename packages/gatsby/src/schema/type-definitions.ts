@@ -1,6 +1,6 @@
 import { GraphQLResolveInfo } from "graphql"
 
-import { IPhantomReporter } from "gatsby-cli/lib/reporter/reporter-phantom"
+import { IPhantomReporter } from "@colin3dmax/gatsby-cli/lib/reporter/reporter-phantom"
 
 import { IGraphQLRunnerStats } from "../query/types"
 import { Path } from "graphql/jsutils/Path"

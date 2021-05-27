@@ -1,5 +1,5 @@
 import { IStateProgram, ActionsUnion } from "../types"
-import { reporter } from "gatsby-cli/lib/reporter/reporter"
+import { reporter } from "@colin3dmax/gatsby-cli/lib/reporter/reporter"
 
 const initialState: IStateProgram = {
   directory: `/`,

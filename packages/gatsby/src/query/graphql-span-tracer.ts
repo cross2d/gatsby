@@ -1,8 +1,8 @@
 import { Path } from "graphql/jsutils/Path"
 
-import report from "gatsby-cli/lib/reporter"
-import { IActivityArgs } from "gatsby-cli/src/reporter/reporter"
-import { IPhantomReporter } from "gatsby-cli/src/reporter/reporter-phantom"
+import report from "@colin3dmax/gatsby-cli/lib/reporter"
+import { IActivityArgs } from "@colin3dmax/gatsby-cli/src/reporter/reporter"
+import { IPhantomReporter } from "@colin3dmax/gatsby-cli/src/reporter/reporter-phantom"
 
 import { IGraphQLSpanTracer } from "../schema/type-definitions"
 import { pathToArray } from "./utils"
